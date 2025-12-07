@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>班级刮刮乐管理工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>班级刮刮乐</h1>
+            <p class="description">刮开涂层，发现惊喜奖励！</p>
+        </header>
+        
+        <div class="main-content">
+            <section class="rewards-section">
+                <h2>奖励管理</h2>
+                <div class="rewards-list" id="rewardsList">
+                    <!-- 奖励列表将在这里动态生成 -->
+                </div>
+                
+                <div class="add-reward">
+                    <input type="text" id="newRewardInput" placeholder="输入新的奖励内容...">
+                    <button id="addRewardBtn">添加奖励</button>
+                </div>
+            </section>
+            
+            <section class="scratch-section">
+                <h2>刮奖区</h2>
+                <div class="scratch-grid" id="scratchGrid">
+                    <!-- 刮刮乐卡片将在这里动态生成 -->
+                </div>
+                
+                <div class="controls">
+                    <button id="resetBtn">重置所有卡片</button>
+                    <button id="newCardsBtn">生成新卡片</button>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            © 2025 gegeda
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
